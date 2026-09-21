@@ -1,5 +1,5 @@
 /* ============================================================
-   DentaPro Distribution — interactions du site vitrine
+   Dentalium EURL — interactions du site vitrine
    ============================================================ */
 (function () {
   "use strict";

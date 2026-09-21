@@ -1,4 +1,4 @@
-# DentaPro Distribution — Site vitrine (démo)
+# EURL Dentalium — Site vitrine (démo)
 
 Site vitrine responsive de **distributeur de matériel paramédical dentaire** (échantillon client).
 Hébergé sur GitHub Pages : <https://amanasolution003-byte.github.io/cabinet-dentaire-demo/>
@@ -25,7 +25,7 @@ Polices : Fraunces & Manrope (Google Fonts).
 
 | Élément | Où |
 | --- | --- |
-| Nom de l'enseigne | `index.html` (rechercher `DentaPro`) |
+| Nom de l'enseigne | `index.html` (rechercher `Dentalium` ou `Dentalium`) |
 | Téléphone / e-mail / adresse | sections Contact & Footer de `index.html` |
 | Couleurs principales | variables `--teal`, `--pine`, `--gold` dans `styles.css` |
 | Marques partenaires | section `#marques` de `index.html` |
