@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DentaPro Distribution — Matériel paramédical dentaire</title>
+  <meta name="description" content="DentaPro Distribution : distributeur de matériel paramédical dentaire. Fauteuils, imagerie 3D, stérilisation, instruments rotatifs, consommables. Stock France, livraison 48h, SAV dédié." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232f8f7a'/%3E%3Cpath fill='%23fff' d='M16 6c-2.4 0-3.6 1.3-5.2 1.3C8.6 7.3 7 6.2 5.4 6.2 3 6.2 1.8 8 2.2 10.5c.5 3 2.6 14 3.9 14 .9 0 1.2-1.8 2-1.8s1 1.8 2 .6c.8-1 0-4.6.9-4.6 1 0-.6 4.4.5 4.4.9 0 1.4-1.8 2-1.8.6 0 1.1 1.8 2 .6.7-.8 0-3.4 1.3-3.4 1.2 0 .3 3.2 1.2 3.2 1 0 1.4-2 2.4-2s1.3 2 2.3 2c1.6 0 3.5-11 4-14 .4-2.5-.8-4.3-3.2-4.3-1.6 0-2.7 1.1-4.2 1.1C19.6 7.3 18.4 6 16 6z'/%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand" aria-label="DentaPro Distribution — retour à l'accueil">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="26" height="26" fill="none">
+            <path fill="#0c1f1c" d="M16 5.5c-2.6 0-3.9 1.4-5.6 1.4-1.9 0-3.5-1.2-5.2-1.2-2.5 0-3.8 1.9-3.4 4.4.5 3.2 2.7 14.9 4.1 14.9 1 0 1.2-1.9 2.1-1.9s1.1 1.9 2.1.6c.9-1.1 0-4.9 1-4.9s-.6 4.6.5 4.6c1 0 1.5-1.9 2.2-1.9s1.2 1.9 2.2.6c.8-.8 0-3.6 1.4-3.6s.3 3.4 1.3 3.4c1.1 0 1.5-2.1 2.6-2.1s1.4 2.1 2.4 2.1c1.7 0 3.7-11.7 4.2-14.5.4-2.5-.9-4.4-3.4-4.4-1.7 0-2.9 1.2-4.5 1.2-1.7 0-3-1.4-5.6-1.4z"/>
+          </svg>
+        </span>
+        <span class="brand-text">DentaPro<em>Distribution matériel dentaire</em></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="#apropos">Le distributeur</a>
+        <a href="#produits">Gammes produits</a>
+        <a href="#marques">Marques</a>
+        <a href="#services">Services</a>
+        <a href="#avis">Avis</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">Demander un devis</a>
+        <button class="nav-burger" id="navBurger" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="nav-mobile" id="navMobile" hidden>
+      <nav aria-label="Navigation mobile">
+        <a href="#apropos">Le distributeur</a>
+        <a href="#produits">Gammes produits</a>
+        <a href="#marques">Marques</a>
+        <a href="#services">Services</a>
+        <a href="#avis">Avis</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn-primary">Demander un devis</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+        <div class="hero-grid"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <span class="badge">
+            <span class="badge-dot"></span>
+            Distributeur matériel paramédical &amp; dentaire
+          </span>
+          <h1>Équipez votre cabinet avec un matériel <em>d'exception</em>.</h1>
+          <p class="hero-sub">
+            DentaPro Distribution sélectionne et distribue fauteuils, imagerie,
+            stérilisation, instruments et consommables pour les professionnels de
+            santé dentaire. Stock permanent en France, livraison 48h et SAV dédié.
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              Demander un devis
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m0 0-6-6m6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#produits" class="btn btn-ghost btn-lg">Découvrir nos gammes</a>
+          </div>
+          <div class="hero-trust">
+            <div class="stars" aria-label="Note 4,8 sur 5">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3l-6.1 3.3 1.4-6.8L2.2 9.1l6.9-.8L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3l-6.1 3.3 1.4-6.8L2.2 9.1l6.9-.8L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3l-6.1 3.3 1.4-6.8L2.2 9.1l6.9-.8L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3l-6.1 3.3 1.4-6.8L2.2 9.1l6.9-.8L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3l-6.1 3.3 1.4-6.8L2.2 9.1l6.9-.8L12 2z"/></svg>
+            </div>
+            <p><strong>4,8/5</strong> · plus de <strong>2 500 cabinets</strong> équipés</p>
+          </div>
+        </div>
+
+        <!-- Hero visual -->
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="frame frame-main">
+            <div class="frame-glow"></div>
+            <div class="frame-tag">Équipements pro</div>
+            <svg class="tooth-svg" viewBox="0 0 200 220" fill="none">
+              <defs>
+                <linearGradient id="toothGrad" x1="40" y1="20" x2="160" y2="200" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#ffffff"/>
+                  <stop offset="1" stop-color="#e8f4f1"/>
+                </linearGradient>
+              </defs>
+              <path fill="url(#toothGrad)" d="M100 26c-14 0-21 7-31 7s-17-6-27-6c-14 0-22 11-20 26 3 19 15 88 23 88 5 0 6-11 12-11s6 11 12 4c5-6 0-27 6-27 6 0-4 26 3 26 5 0 8-11 12-11s7 11 12 4c4-6 0-20 8-20 7 0 2 19 7 19 6 0 8-12 14-12s8 12 14 12c10 0 21-52 24-68 2-15-5-26-19-26-10 0-16 6-27 6s-17-7-31-7z"/>
+              <path fill="none" stroke="#2f8f7a" stroke-opacity=".35" stroke-width="2.5" stroke-linecap="round" d="M40 46c14 8 22 30 28 62M160 46c-14 8-22 30-28 62"/>
+              <circle cx="100" cy="38" r="4" fill="#2f8f7a" opacity=".5"/>
+            </svg>
+          </div>
+
+          <div class="chip chip-1">
+            <span class="chip-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true"><path d="M12 3 5 6v5c0 4.5 3 8.4 7 10 4-1.6 7-5.5 7-10V6l-7-3z" fill="#fff"/><path d="m9 11.5 2 2 4-4.5" stroke="#2f8f7a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span><strong>Certification CE</strong><em>Normes ISO 13485</em></span>
+          </div>
+          <div class="chip chip-2">
+            <span class="chip-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true"><path d="M3 8l9-5 9 5v9l-9 5-9-5V8z" fill="#fff"/><path d="M3 8l9 5m0 0 9-5m-9 5v9M12 8l3 2m-9 5 6 3" stroke="#2f8f7a" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span><strong>Stock en France</strong><em>95 % des références dispo</em></span>
+          </div>
+          <div class="rating-chip">
+            <span class="rating-num">48<small>h</small></span>
+            <span><strong>Livraison express</strong><em>France métropolitaine</em></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marquee -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Fauteuils &amp; unités</span><i>✦</i>
+          <span>Imagerie 3D</span><i>✦</i>
+          <span>Stérilisation</span><i>✦</i>
+          <span>Instruments rotatifs</span><i>✦</i>
+          <span>Consommables</span><i>✦</i>
+          <span>Mobilier médical</span><i>✦</i>
+          <span>Radios panoramiques</span><i>✦</i>
+          <span>Fauteuils &amp; unités</span><i>✦</i>
+          <span>Imagerie 3D</span><i>✦</i>
+          <span>Stérilisation</span><i>✦</i>
+          <span>Instruments rotatifs</span><i>✦</i>
+          <span>Consommables</span><i>✦</i>
+          <span>Mobilier médical</span><i>✦</i>
+          <span>Radios panoramiques</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat reveal">
+          <span class="stat-num" data-count="20" data-suffix="+">0</span>
+          <span class="stat-label">années d'expérience</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-num" data-count="2500" data-suffix="+">0</span>
+          <span class="stat-label">cabinets équipés</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-num" data-count="50" data-suffix="+">0</span>
+          <span class="stat-label">marques partenaires</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-num" data-count="98" data-suffix="%">0</span>
+          <span class="stat-label">clients satisfaits</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DISTRIBUTEUR (ABOUT) ============ -->
+    <section class="section" id="apropos">
+      <div class="container about">
+        <div class="about-media reveal">
+          <div class="about-frame">
+            <div class="about-blob" aria-hidden="true"></div>
+            <div class="about-card">
+              <span class="about-card-title">Notre promesse distributeur</span>
+              <ul>
+                <li>Garantie constructeur 24 mois sur tous les équipements</li>
+                <li>Produits certifiés CE &amp; traçabilité complète</li>
+                <li>Tarifs dégressifs &amp; contrats d'entretien annuels</li>
+              </ul>
+            </div>
+            <div class="about-symbol" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none"><path d="M3 8l9-5 9 5v9l-9 5-9-5V8z" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 8l9 5m0 0 9-5m-9 5v9" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="about-halo" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="about-copy reveal">
+          <span class="eyebrow">Le distributeur</span>
+          <h2>Un partenaire fiable derrière chaque achat.</h2>
+          <p class="lead">
+            Depuis 2005, DentaPro Distribution équipe les cabinets dentaires,
+            cliniques et laboratoires de prothèse avec des matériels sélectionnés
+            pour leur fiabilité, leur conformité et leur rapport qualité-prix.
+          </p>
+          <p>
+            Du fauteuil dentaire à la radio panoramique, nous gérons tout :
+            sourcing, logistique, installation, formation de vos équipes et
+            maintenance. Vous commandez, nous nous occupons du reste.
+          </p>
+          <ul class="tick-list">
+            <li>Stock permanent en France — 95 % d'articles disponibles</li>
+            <li>Devis personnalisé sous 24 h &amp; tarifs dégressifs</li>
+            <li>Installation et formation de vos équipes incluses</li>
+            <li>SAV et maintenance sur site sous 48 h</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Parler à un commercial</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GAMMES PRODUITS ============ -->
+    <section class="section section-alt" id="produits">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Nos gammes</span>
+          <h2>Plus de 8 000 références, six pôles d'expertise.</h2>
+          <p>Une offre complète pour équiper le cabinet moderne : du diagnostic à l'hygiène, de l'équipement lourd au consommable du quotidien.</p>
+        </div>
+
+        <div class="cards-grid">
+          <!-- Card 1 -->
+          <article class="care-card reveal">
+            <div class="care-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" aria-hidden="true"><path d="M8 17V9a4 4 0 0 1 8 0v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M6 17h12M7 17a2 2 0 0 1-2 2H4M17 17a2 2 0 0 0 2 2h1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M9 6V3h6v3M12 17v2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Fauteuils &amp; unités</h3>
+            <p>Fauteuils dentaires, unités complètes et tables opératoires des plus grandes marques, avec contraste et éclairage LED intégrés.</p>
+            <span class="care-link">Voir la gamme →</span>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="care-card reveal">
+            <div class="care-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8"/><path d="M12 6v12M6 12h12M12 3.5v3M12 17.5v3M3.5 12h3M17.5 12h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="2.4" stroke="currentColor" stroke-width="1.8"/></svg>
+            </div>
+            <h3>Imagerie &amp; radiologie</h3>
+            <p>Radios panoramiques, téléradiographies, capteurs numériques et imagerie 3D à faible dose pour un diagnostic précis.</p>
+            <span class="care-link">Voir la gamme →</span>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="care-card reveal">
+            <div class="care-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" aria-hidden="true"><path d="M13 3 5 13h6l-1 8L18 11h-6l1-8z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Stérilisation &amp; hygiène</h3>
+            <p>Autoclaves classe B, thermosoudeuses et machines de nettoyage désinfection pour une stérilité irréprochable.</p>
+            <span class="care-link">Voir la gamme →</span>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="care-card reveal">
+            <div class="care-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" aria-hidden="true"><path d="M7 20c7 0 12-4 13.5-9.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M17 4c-3 .7-5.5 2.3-7.5 4.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="7" cy="20" r="2.4" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="4" r="2.4" stroke="currentColor" stroke-width="1.8"/></svg>
+            </div>
+            <h3>Instruments rotatifs</h3>
+            <p>Turbines, contre-angles, pièces à main et micromoteurs : précision et longévité pour un travail quotidien serein.</p>
+            <span class="care-link">Voir la gamme →</span>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="care-card reveal">
+            <div class="care-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" aria-hidden="true"><path d="M3 7l9-4 9 4v10l-9 4-9-4V7z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 11V7m0 4-2 3m2-3 2 3M7 16l2-4m8 4-2-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Consommables &amp; petits matériels</h3>
+            <p>Anesthésie, empreintes numériques, angulaires, pointes, gants et protections : la logistique du quotidien en un point.</p>
+            <span class="care-link">Voir la gamme →</span>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="care-card reveal">
+            <div class="care-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 7h8M8 10.5h8M8 14h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Mobilier &amp; aménagement</h3>
+            <p>Mobilier médical, armoires à pharmacie, luminaires et agencement complet du cabinet, pensés pour l'ergonomie.</p>
+            <span class="care-link">Voir la gamme →</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUES ============ -->
+    <section class="section" id="marques">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Marques partenaires</span>
+          <h2>Les références que vous demandez, en un seul distributeur.</h2>
+          <p>Distributeur agréé de plus de 50 marques — liste complète du catalogue sur demande.</p>
+        </div>
+
+        <div class="brand-strip">
+          <div class="mono reveal"><span class="mono-logo logo-a">V</span><span class="mono-name">Vertex Dental</span></div>
+          <div class="mono reveal"><span class="mono-logo logo-b">OS</span><span class="mono-name">Ospalmed</span></div>
+          <div class="mono reveal"><span class="mono-logo logo-c">ML</span><span class="mono-name">MediLine EQ</span></div>
+          <div class="mono reveal"><span class="mono-logo logo-d">PD</span><span class="mono-name">ProDenta</span></div>
+          <div class="mono reveal"><span class="mono-logo logo-e">DW</span><span class="mono-name">DentWay</span></div>
+          <div class="mono reveal"><span class="mono-logo logo-f">SS</span><span class="mono-name">SteriSafe</span></div>
+          <div class="mono reveal"><span class="mono-logo logo-g">RM</span><span class="mono-name">RadiMax</span></div>
+          <div class="mono reveal"><span class="mono-logo logo-h">KA</span><span class="mono-name">KlinikArt</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES / PROCESS ============ -->
+    <section class="section section-alt process" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Nos services</span>
+          <h2>De la demande de devis à la maintenance, tout est géré.</h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <span class="step-num">01</span>
+            <h3>Consultation &amp; devis</h3>
+            <p>Échangez avec nos experts techniques et recevez une offre personnalisée sous 24 h.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step-num">02</span>
+            <h3>Commande &amp; stock</h3>
+            <p>95 % des références disponibles en stock, expédition sous 48 h partout en France.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step-num">03</span>
+            <h3>Installation &amp; formation</h3>
+            <p>Nos techniciens installent vos équipements et forment toute votre équipe sur site.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step-num">04</span>
+            <h3>SAV &amp; maintenance</h3>
+            <p>Contrats d'entretien, pièces détachées et assistance prioritaire : zéro interruption d'activité.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EQUIPE ============ -->
+    <section class="section" id="equipe">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Vos interlocuteurs</span>
+          <h2>Une équipe de spécialistes à votre écoute.</h2>
+          <p>Des profils complémentaires pour vous conseiller à chaque étape de votre projet d'équipement.</p>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-card reveal">
+            <div class="avatar avatar-1" aria-hidden="true">KB</div>
+            <h3>Karim Bensalem</h3>
+            <span class="role">Directeur commercial</span>
+            <p>20 ans dans les équipements médicaux, il pilote les projets d'équipement complet de cabinets et cliniques.</p>
+            <span class="team-spec">Projets clés en main</span>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="avatar avatar-2" aria-hidden="true">LM</div>
+            <h3>Léa Moreau</h3>
+            <span class="role">Experte imagerie &amp; radiologie</span>
+            <p>Ingénieure biomédicale, elle conseille les praticiens sur les solutions d'imagerie 2D et 3D à faible dose.</p>
+            <span class="team-spec">Imagerie · Radio</span>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="avatar avatar-3" aria-hidden="true">YT</div>
+            <h3>Yvan Tchelet</h3>
+            <span class="role">Responsable SAV &amp; maintenance</span>
+            <p>À la tête de l'équipe technique, il coordonne installations, formations et interventions sous 48 h.</p>
+            <span class="team-spec">SAV · Maintenance</span>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="avatar avatar-4" aria-hidden="true">NH</div>
+            <h3>Nora Haddad</h3>
+            <span class="role">Comptes clés &amp; labos</span>
+            <p>Votre interlocutrice pour les laboratoires de prothèse, les écoles et les structures de groupe.</p>
+            <span class="team-spec">Labos · Groupes</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AVIS ============ -->
+    <section class="section testimonials" id="avis">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Ils nous font confiance</span>
+          <h2>Ce que nos clients professionnels racontent.</h2>
+        </div>
+
+        <div class="slider reveal" id="slider">
+          <div class="slider-track" id="sliderTrack">
+            <figure class="quote">
+              <div class="quote-stars" aria-label="5 étoiles">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3l-6.1 3.3 1.4-6.8L2.2 9.1l6.9-.8L12 2z"/></svg><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3l-6.1 3.3 1.4-6.8L2.2 9.1l6.9-.8L12 2z"/></svg><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3l-6.1 3.3 1.4-6.8L2.2 9.1l6.9-.8L12 2z"/></svg><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3l-6.1 3.3 1.4-6.8L2.2 9.1l6.9-.8L12 2z"/></svg><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3l-6.1 3.3 1.4-6.8L2.2 9.1l6.9-.8L12 2z"/></svg>
+              </div>
+              <blockquote>« Cabinet entièrement équipé en trois semaines : devis limpide, installation nickel et équipe formée sur place. Le SAV répond en moins d'une journée. »</blockquote>
+              <figcaption><span class="q-avatar">CD</span><span><strong>Cabinet Dentaire des Lilas</strong><em>Équipement complet · 2025</em></span></figcaption>
+            </figure>
+            <figure class="quote">
+              <div class="quote-stars" aria-label="5 étoiles">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3l-6.1 3.3 1.4-6.8L2.2 9.1l6.9-.8L12 2z"/></svg><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3l-6.1 3.3 1.4-6.8L2.2 9.1l6.9-.8L12 2z"/></svg><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3l-6.1 3.3 1.4-6.8L2.2 9.1l6.9-.8L12 2z"/></svg><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3l-6.1 3.3 1.4-6.8L2.2 9.1l6.9-.8L12 2z"/></svg><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3l-6.1 3.3 1.4-6.8L2.2 9.1l6.9-.8L12 2z"/></svg>
+              </div>
+              <blockquote>« Un vrai plus : la grosse majorité des consommables est en stock. On commande le lundi, on est livré le mercredi. Fini les ruptures. »</blockquote>
+              <figcaption><span class="q-avatar q-a2">LP</span><span><strong>Laboratoire Prothèse Sud</strong><em>Consommables · 2025</em></span></figcaption>
+            </figure>
+            <figure class="quote">
+              <div class="quote-stars" aria-label="5 étoiles">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3l-6.1 3.3 1.4-6.8L2.2 9.1l6.9-.8L12 2z"/></svg><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3l-6.1 3.3 1.4-6.8L2.2 9.1l6.9-.8L12 2z"/></svg><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3l-6.1 3.3 1.4-6.8L2.2 9.1l6.9-.8L12 2z"/></svg><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3l-6.1 3.3 1.4-6.8L2.2 9.1l6.9-.8L12 2z"/></svg><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3l-6.1 3.3 1.4-6.8L2.2 9.1l6.9-.8L12 2z"/></svg>
+              </div>
+              <blockquote>« Un autoclave en panne remplacé provisoirement en 48h le temps de la réparation. C'est ce niveau de service qui fait la différence. »</blockquote>
+              <figcaption><span class="q-avatar q-a3">CA</span><span><strong>Clinique Dentaire Azur</strong><em>SAV · 2024</em></span></figcaption>
+            </figure>
+          </div>
+          <div class="slider-nav">
+            <button id="prevQuote" aria-label="Avis précédent">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true"><path d="m15 18-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="slider-dots" id="sliderDots" aria-hidden="true"></div>
+            <button id="nextQuote" aria-label="Avis suivant">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true"><path d="m9 18 6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section-alt" id="faq">
+      <div class="container faq-wrap">
+        <div class="faq-head reveal">
+          <span class="eyebrow">Questions fréquentes</span>
+          <h2>Ce que nos clients nous demandent.</h2>
+          <p>Une autre question ? Nos commerciaux répondent au 01 23 45 67 89.</p>
+        </div>
+
+        <div class="faq-list reveal">
+          <details class="faq-item" open>
+            <summary>Vos équipements sont-ils certifiés ?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>Oui. Tous nos équipements sont certifiés CE et conformes aux normes ISO 13485 et 17664. Nous fournissons les dossiers de conformité, les certificats et la traçabilité complète de chaque appareil.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Quels sont les délais de livraison ?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>95 % de nos références sont en stock en France : expédition sous 48 h et livraison sous 3 à 5 jours ouvrés en France métropolitaine. Les équipements sur commande sont livrés avec un délai annoncé dès le devis.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Proposez-vous un devis pour un équipement complet de cabinet ?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>Absolument. C'est même notre cœur de métier : un commercial dédié vous accompagne, propose un équipement cohérent avec votre activité et votre budget, puis gère installation et formation de l'équipe.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Que couvre le SAV après la vente ?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>Garantie constructeur 24 mois par défaut, extension jusqu'à 60 mois possible, contrats d'entretien annuels, pièces détachées en stock et intervention sur site sous 48 h pour les équipements sous contrat.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Puis-je bénéficier d'un remplacement en cas de panne ?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>Oui. Un équipement de prêt est mis à disposition sous 48 h lorsque la réparation d'un appareil sous garantie ou sous contrat d'entretien excède 5 jours ouvrés.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BANNER ============ -->
+    <section class="section cta" id="devis">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <div class="cta-glow" aria-hidden="true"></div>
+          <span class="badge badge-light">Catalogue &amp; devis gratuits</span>
+          <h2>Équipez votre cabinet avec les meilleures marques.</h2>
+          <p>Recevez le catalogue 2026 et une proposition chiffrée sous 24 h. Sans engagement, avec un interlocuteur dédié.</p>
+          <div class="cta-actions">
+            <a href="#contact" class="btn btn-light btn-lg">Demander mon devis</a>
+            <a href="tel:+33123456789" class="btn btn-outline-light btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5c0 8.3 6.7 15 15 15l2-4-4.5-2-2 1.5A10.5 10.5 0 0 1 8.5 9.5L10 7.5 8 3 4 5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              01 23 45 67 89
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <span class="eyebrow">Contact commercial</span>
+          <h2>Parlons de votre projet.</h2>
+          <p>Devis, démonstrations sur demande, conseil technique : nos équipes vous répondent rapidement.</p>
+
+          <ul class="info-list">
+            <li>
+              <span class="info-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true"><path d="M12 21s-8-5.5-8-11a8 8 0 0 1 16 0c0 5.5-8 11-8 11z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.8"/></svg>
+              </span>
+              <span><strong>Plateforme logistique</strong>Zone Actipôle — 14, rue des Artisans, 77420 Champs-sur-Marne</span>
+            </li>
+            <li>
+              <span class="info-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </span>
+              <span><strong>Horaires</strong>Lun–Ven 8h30–18h · Urgences SAV 7j/7</span>
+            </li>
+            <li>
+              <span class="info-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true"><path d="M4 5c0 8.3 6.7 15 15 15l2-4-4.5-2-2 1.5A10.5 10.5 0 0 1 8.5 9.5L10 7.5 8 3 4 5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              </span>
+              <span><strong>Ventes &amp; SAV</strong><a href="tel:+33123456789">01 23 45 67 89</a> · commercial@dentapro.eu</span>
+            </li>
+            <li>
+              <span class="info-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span><strong>Devis &amp; catalogue</strong><a href="mailto:devis@dentapro.eu">devis@dentapro.eu</a> · réponse sous 24h</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <label>Nom complet
+              <input type="text" name="name" placeholder="Dr. Marie Dupont" required autocomplete="name" />
+            </label>
+            <label>Adresse e-mail
+              <input type="email" name="email" placeholder="marie@cabinet.fr" required autocomplete="email" />
+            </label>
+          </div>
+          <div class="form-row">
+            <label>Téléphone
+              <input type="tel" name="phone" placeholder="06 12 34 56 78" autocomplete="tel" />
+            </label>
+            <label>Type de structure
+              <select name="structure" required>
+                <option value="" selected disabled>Choisir…</option>
+                <option>Cabinet dentaire</option>
+                <option>Clinique / groupe</option>
+                <option>Laboratoire de prothèse</option>
+                <option>École / centre de formation</option>
+                <option>Autre professionnel</option>
+              </select>
+            </label>
+          </div>
+          <label>Votre besoin
+            <select name="care" required>
+              <option value="" selected disabled>Choisir une gamme…</option>
+              <option>Équipement complet d'un cabinet</option>
+              <option>Fauteuils &amp; unités</option>
+              <option>Imagerie &amp; radiologie</option>
+              <option>Stérilisation &amp; hygiène</option>
+              <option>Instruments rotatifs</option>
+              <option>Consommables &amp; petits matériels</option>
+              <option>Mobilier &amp; aménagement</option>
+              <option>Contrat SAV / maintenance</option>
+            </select>
+          </label>
+          <label>Votre message
+            <textarea name="message" rows="4" placeholder="Décrivez votre projet d'équipement, vos contraintes de budget ou de délai…"></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary btn-block">
+            Envoyer ma demande de devis
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="form-note">🔒 Vos informations restent confidentielles. (Formulaire de démonstration)</p>
+          <div class="toast" id="toast" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand brand-footer">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24" fill="none"><path fill="#fff" d="M16 5.5c-2.6 0-3.9 1.4-5.6 1.4-1.9 0-3.5-1.2-5.2-1.2-2.5 0-3.8 1.9-3.4 4.4.5 3.2 2.7 14.9 4.1 14.9 1 0 1.2-1.9 2.1-1.9s1.1 1.9 2.1.6c.9-1.1 0-4.9 1-4.9s-.6 4.6.5 4.6c1 0 1.5-1.9 2.2-1.9s1.2 1.9 2.2.6c.8-.8 0-3.6 1.4-3.6s.3 3.4 1.3 3.4c1.1 0 1.5-2.1 2.6-2.1s1.4 2.1 2.4 2.1c1.7 0 3.7-11.7 4.2-14.5.4-2.5-.9-4.4-3.4-4.4-1.7 0-2.9 1.2-4.5 1.2-1.7 0-3-1.4-5.6-1.4z"/></svg>
+          </span>
+          <span class="brand-text brand-text-light">DentaPro<em>Distribution matériel dentaire</em></span>
+        </a>
+        <p>Distributeur de matériel paramédical dentaire. Plus de 8 000 références en stock, livraison 48h et SAV dédié.</p>
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.8"/><path d="M8 10v7M8 7.2v.1M12 17v-4a2.5 2.5 0 0 1 5 0v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="4" stroke="currentColor" stroke-width="1.8"/><path d="m10 9.5 4.5 2.5-4.5 2.5v-5z" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="E-mail"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+
+      <nav class="footer-col" aria-label="Navigation pied de page">
+        <h4>DentaPro</h4>
+        <a href="#apropos">Le distributeur</a>
+        <a href="#produits">Gammes produits</a>
+        <a href="#marques">Marques partenaires</a>
+        <a href="#equipe">L'équipe</a>
+      </nav>
+
+      <nav class="footer-col" aria-label="Gammes">
+        <h4>Nos gammes</h4>
+        <a href="#produits">Fauteuils &amp; unités</a>
+        <a href="#produits">Imagerie &amp; radiologie</a>
+        <a href="#produits">Stérilisation &amp; hygiène</a>
+        <a href="#produits">Consommables</a>
+      </nav>
+
+      <div class="footer-col footer-contact">
+        <h4>Contact</h4>
+        <p>Zone Actipôle — 14, rue des Artisans<br/>77420 Champs-sur-Marne</p>
+        <a href="tel:+33123456789">01 23 45 67 89</a>
+        <a href="mailto:devis@dentapro.eu">devis@dentapro.eu</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© <span id="year"></span> DentaPro Distribution — Site de démonstration.</p>
+        <a href="#" class="to-top" id="toTop" aria-label="Retour en haut">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M12 19V5m0 0-6 6m6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
