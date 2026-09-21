@@ -54,6 +54,9 @@
 /* ---------- Reset ---------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* L'attribut hidden doit toujours masquer, même face à un display:flex auteur */
+[hidden] { display: none !important; }
+
 html { scroll-behavior: smooth; }
 
 body {
@@ -232,6 +235,17 @@ h1 em, h2 em { font-style: italic; font-weight: 500; color: var(--teal); }
   gap: var(--s2);
   box-shadow: var(--shadow-lg);
 }
+.nav-backdrop {
+  position: fixed;
+  inset: var(--nav-h) 0 0 0;
+  z-index: -1;
+  background: rgba(12, 31, 28, 0.45);
+  backdrop-filter: blur(3px);
+  animation: fadeIn 0.25s ease;
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.nav-mobile.menu-open { animation: menuIn 0.3s cubic-bezier(0.22, 1, 0.36, 1); }
+@keyframes menuIn { from { opacity: 0; transform: translateY(-12px); } to { opacity: 1; transform: none; } }
 .nav-mobile nav { display: flex; flex-direction: column; }
 .nav-mobile nav a { padding: 0.8rem 0.4rem; font-weight: 700; border-bottom: 1px solid var(--sand); color: var(--ink); }
 

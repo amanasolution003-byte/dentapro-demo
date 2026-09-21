@@ -26,19 +26,28 @@
     toggleNav();
   }
   if (burger && mobile) {
-    burger.addEventListener("click", () => {
-      const open = burger.getAttribute("aria-expanded") === "true";
-      burger.setAttribute("aria-expanded", String(!open));
-      mobile.hidden = open;
-      document.body.style.overflow = open ? "" : "hidden";
-    });
+    const backdrop = document.getElementById("navBackdrop");
+    const setMenu = (open) => {
+      mobile.hidden = !open;
+      if (backdrop) backdrop.hidden = !open;
+      burger.setAttribute("aria-expanded", String(open));
+      document.body.style.overflow = open ? "hidden" : "";
+    };
+    const isOpen = () => burger.getAttribute("aria-expanded") === "true";
+
+    burger.addEventListener("click", () => setMenu(!isOpen()));
     mobile.querySelectorAll("a").forEach((a) =>
-      a.addEventListener("click", () => {
-        burger.setAttribute("aria-expanded", "false");
-        mobile.hidden = true;
-        document.body.style.overflow = "";
-      })
+      a.addEventListener("click", () => setMenu(false))
     );
+    if (backdrop) {
+      backdrop.addEventListener("click", () => setMenu(false));
+    }
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && isOpen()) setMenu(false);
+    });
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 820 && isOpen()) setMenu(false);
+    });
   }
 
   /* ---------- Reveal on scroll ---------- */
